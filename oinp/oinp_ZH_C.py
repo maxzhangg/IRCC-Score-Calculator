@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-
+import oinp_foreignworker_ZH_C
+import oinp_indemandskill_ZH_C
+import oinp_internationalstudent_ZH_C
+import oinp_master_ZH_C
+import oinp_phd_ZH_C
 # 每個 stream 對應模組名稱（繁體中文）
 stream_modules = {
     "外國工人（Foreign Worker）": "oinp_foreignworker_ZH_C",

@@ -1,5 +1,10 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
+import oinp_foreignworker_ZH_S
+import oinp_indemandskill_ZH_S
+import oinp_internationalstudent_ZH_S
+import oinp_master_ZH_S
+import oinp_phd_ZH_S
 
 # 每个 stream 对应模块名
 stream_modules = {
