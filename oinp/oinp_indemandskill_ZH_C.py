@@ -38,7 +38,10 @@ scoring_rules_yue = {
 }
 
 def main():
-    root = tk.Tk()
+    if tk._default_root is None:
+        root = tk.Tk()
+    else:
+        root = tk.Toplevel()
     root.title("OINP 僱主擔保 - 緊缺技能類別打分器（粵語版）")
 
     frame = ttk.Frame(root, padding="10")

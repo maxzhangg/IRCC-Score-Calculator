@@ -50,7 +50,10 @@ scoring_rules = {
 }
 
 def main():
-    root = tk.Tk()
+    if tk._default_root is None:
+        root = tk.Tk()
+    else:
+        root = tk.Toplevel()
     root.title("OINP 碩士類打分器（粵語版）")
 
     frame = ttk.Frame(root, padding="10")

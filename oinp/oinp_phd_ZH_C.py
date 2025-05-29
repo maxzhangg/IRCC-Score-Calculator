@@ -49,7 +49,10 @@ scoring_rules_yue_phd = {
 }
 
 def main():
-    root = tk.Tk()
+    if tk._default_root is None:
+        root = tk.Tk()
+    else:
+        root = tk.Toplevel()
     root.title("OINP 博士畢業生類別打分器（粵語）")
 
     frame = ttk.Frame(root, padding="10")

@@ -39,7 +39,10 @@ scoring_rules_in_demand = {
 }
 
 def run_in_demand_gui():
-    root = tk.Tk()
+    if tk._default_root is None:
+        root = tk.Tk()
+    else:
+        root = tk.Toplevel()
     root.title("OINP 雇主担保 - 紧缺职业类别打分器（简体中文）")
 
     frame = ttk.Frame(root, padding="10")
